@@ -20,11 +20,13 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: SvgPicture.asset(
-          AppVectors.logo
-        )
+    return SafeArea(
+      child: Scaffold(
+        body: Center(
+          child: SvgPicture.asset(
+            AppVectors.logo
+          )
+        ),
       ),
     );
   }
